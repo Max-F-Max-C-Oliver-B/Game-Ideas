@@ -8,6 +8,6 @@ People involved:
 Game Ideas:
 -2D Shooter
   - Birds eye view
-  - Cool Mobs
+  - Retro Mobs
   - level ups
-  - 
+  - Upgradable guns
