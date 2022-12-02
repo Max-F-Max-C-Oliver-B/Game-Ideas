@@ -12,7 +12,9 @@ Game Ideas:
    - Retro Mobs
    - level ups
    - Upgradable guns
-    
+   -open map
+   -gather mats
 
 90s retro style shooter game. Kill them Zombies, and DON'T DIE.
-testing
+
+-
