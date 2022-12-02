@@ -7,11 +7,11 @@ People involved:
 
 Game Ideas:
   
-  -2D Shooter
-    - Birds eye view
-    - Retro Mobs
-    - level ups
-    - Upgradable guns
+ -2D Shooter
+   - Birds eye view
+   - Retro Mobs
+   - level ups
+   - Upgradable guns
     
 
 90s retro style shooter game. Kill them Zombies, and DON'T DIE.
