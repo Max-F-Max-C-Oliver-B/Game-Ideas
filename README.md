@@ -5,11 +5,13 @@ People involved:
 - Max Curtis
 - Oliver Bruce
 - Ivan Pimenov
+
 un choix définitif du projet et de son nom
 
 2D shooter:
  inspirations: -survivor.io
-               -pokemon
+               -diep.io
+               -pokemon 2d (pour le map)
 cahier des charges :
 
    - souris pour diriger le joueur, clavier pour bouger dans la map
@@ -18,15 +20,15 @@ cahier des charges :
    - infini jusqu'à mort
    - 3 vies maximum, vies trouvable sur la map, points en fonction des zombies
    - les niveaux de difficulté augmentent avec le temps
-   - des zombies qui nous suivent
+   - des zombies qui nous suivent (attirés vers le joueur)
    - musique ou autre pourrait être trouver sur: https://pixabay.com/sound-effects/search/retro%20games/
    - projectiles tirer avec la souris
    - Birds eye view
    - Retro Mobs
    - level ups : 
-     - player gains one life(max 3), adds 1 block per second
-     - guns get better, si le niveau augmente on change d'armes(font plus de dégats)
-   - open map
+     - maximum trois vies mais on peut en trouver si jamais on en perd une
+     - si le niveau augmente ou on a un certain niveau de points, on change d'armes(font plus de dégats)
+   
 
 90s retro style shooter game. Kill the Zombies, and DON'T DIE.
 ![image](https://user-images.githubusercontent.com/119675128/206715444-8d9cd839-d707-4ca4-9391-2c2f1ded3694.png)
