@@ -4,6 +4,7 @@ People involved:
 -Max Forster
 -Max Curtis
 -Oliver Bruce
+-Ivan Pimenov
 un choix définitif du projet et de son nom
 
 2D shooter:
