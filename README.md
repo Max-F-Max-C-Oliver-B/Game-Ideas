@@ -33,6 +33,6 @@ cahier des charges :
 
 Roles attribué et planning des prochaines 15 semaines:
 1ère semaines:
- -Constitution du groupes
- -Création du dépôt Github et envoi de l'adresse par Atrium
- -création de sujets avec brèves descriptions dans le readme du dépôt Github  a
+ - Constitution du groupes
+ - Création du dépôt Github et envoi de l'adresse par Atrium
+ - Création de sujets avec brèves descriptions dans le readme du dépôt Github
