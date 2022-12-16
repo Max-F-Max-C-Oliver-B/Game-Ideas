@@ -60,3 +60,12 @@ Roles attribué et planning des prochaines 15 semaines:
  - découpage du projet, et distribution à chaque membre *fait par Oliver et MaxC*
  - début de design *fait par Ivan*
  - 
+Ivan : Design charaters and guns then coding the guns
+Oliver : coding movement and coding guns
+Max.C :  map design and coding the enemies and future debugging and testing.
+Max.F : map design and coding the enemies and future debugging and testing.
+
+10 mins every week testing and debugging
+Then one hour on week 15 just testing and debugging
+
+All coding element will take at least 4 hours per coding element
