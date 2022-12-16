@@ -30,3 +30,9 @@ cahier des charges :
 
 90s retro style shooter game. Kill the Zombies, and DON'T DIE.
 ![image](https://user-images.githubusercontent.com/119675128/206715444-8d9cd839-d707-4ca4-9391-2c2f1ded3694.png)
+
+Roles attribué et planning des prochaines 15 semaines:
+1ère semaines:
+ -Constitution du groupes
+ -Création du dépôt Github et envoi de l'adresse par Atrium
+ -création de sujets avec brèves descriptions dans le readme du dépôt Github
