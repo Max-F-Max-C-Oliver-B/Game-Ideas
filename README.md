@@ -1,10 +1,10 @@
 # Game-Ideas
 game ideas
 People involved:
--Max Forster
--Max Curtis
--Oliver Bruce
--Ivan Pimenov
+- Max Forster
+- Max Curtis
+- Oliver Bruce
+- Ivan Pimenov
 un choix définitif du projet et de son nom
 
 2D shooter:
@@ -23,8 +23,9 @@ cahier des charges :
    - projectiles tirer avec la souris
    - Birds eye view
    - Retro Mobs
-   - level ups
-   - Upgradable guns
+   - level ups : 
+     - player gains one life(max 3), adds 1 block per second
+     - guns get better (do more damage)
    - open map
    - gather mats
 
