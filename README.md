@@ -61,8 +61,11 @@ Roles attribué et planning des prochaines 15 semaines:
  - début de design *fait par Ivan*
  - 
 Ivan : Design charaters and guns then coding the guns
+
 Oliver : coding movement and coding guns
+
 Max.C :  map design and coding the enemies and future debugging and testing.
+
 Max.F : map design and coding the enemies and future debugging and testing.
 
 10 mins every week testing and debugging
