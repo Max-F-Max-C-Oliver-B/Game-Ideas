@@ -35,9 +35,13 @@ cahier des charges :
 
 Roles attribué et planning des prochaines 15 semaines:
 - Oliver:
+ - coordination:
+  - création du programme de chacun (semaine 3)
+  - création d'un groupe de communication
+  - assemblage de chaque programme pour créer le produit finale
  - Codage:
-   - armes (rapidité de tirs, dégats au monstres, changement d'armes
-   - mouvement du personnage et fonctions squelettes du jeu ( 
+   - armes (rapidité de tirs, dégats au monstres, changement d'armes)
+   - mouvement du personnage et fonctions squelettes du jeu (comment le personnage bouge sur la map avec le clavier, comment il tire, etc)
 - Ivan:
  - design:
   - des armes
@@ -46,6 +50,18 @@ Roles attribué et planning des prochaines 15 semaines:
   - et tout autres objets
  - codage:
   - vies
+
+- Max.C:
+ - céation de map
+ - codage:
+  - 
+ - debugging et testing
+  - chaque semaine il passera 10minutes à faire des tests et réparer des problèmes en fin de scéance
+
+
+Max.F : map design and coding the enemies and future debugging and testing.
+
+10 mins
 
 1ère semaines:
  - Constitution du groupes
@@ -56,19 +72,11 @@ Roles attribué et planning des prochaines 15 semaines:
  - un choix définitif du projet et de son nom
  - un cahier des charges
  *fait en groupe*
- 
 3ème semaine:
  - création de ce planning
  - découpage du projet, et distribution à chaque membre *fait par Oliver et MaxC*
  - début de design *fait par Ivan*
  - 
-Ivan : Design charaters and guns then coding the guns
-
-Oliver : coding movement and coding guns
-
-Max.C :  map design and coding the enemies and future debugging and testing.
-
-Max.F : map design and coding the enemies and future debugging and testing.
 
 10 mins every week testing and debugging
 Then one hour on week 15 just testing and debugging
