@@ -35,33 +35,35 @@ cahier des charges :
 
 Roles attribué et planning des prochaines 15 semaines:
 - Oliver:
- - coordination:
-  - création du programme de chacun (semaine 3)
-  - création d'un groupe de communication
-  - assemblage de chaque programme pour créer le produit finale
- - Codage:
-   - armes (rapidité de tirs, dégats au monstres, changement d'armes)
-   - mouvement du personnage et fonctions squelettes du jeu (comment le personnage bouge sur la map avec le clavier, comment il tire, etc)
+  - coordination:
+    - création du programme de chacun (semaine 3)
+    - création d'un groupe de communication
+    - assemblage de chaque programme pour créer le produit finale
+  - Codage:
+    - armes (rapidité de tirs, dégats au monstres, changement d'armes)
+    - mouvement du personnage et fonctions squelettes du jeu (comment le personnage bouge sur la map avec le clavier, comment il tire, etc)
 - Ivan:
- - design:
-  - des armes
-  - des personnages et monstres
-  - de la map
-  - et tout autres objets
- - codage:
-  - vies
+  - design:
+    - des armes
+    - des personnages et monstres
+    - de la map
+    - et tout autres objets
+  - codage:
+    - vies (on perd des vies en contact des monstres et comment on les récupére
 
 - Max.C:
- - céation de map
- - codage:
-  - 
- - debugging et testing
-  - chaque semaine il passera 10minutes à faire des tests et réparer des problèmes en fin de scéance
+  - codage:
+    - création de map (où trouver des objets et codage des obstacles)
+    - zombies/monstres (comment il apparaissent, leur système de mouvement, leur dégats)
+  - debugging et testing
+    - chaque semaine il passera 10minutes à faire des tests et réparer des problèmes en fin de scéance
 
 
-Max.F : map design and coding the enemies and future debugging and testing.
-
-10 mins
+- Max.F : 
+  - map design
+  - codage des enemies/monstres:
+    - comment ils bougent et suivent le personnage
+    - comment ils évitent les obstacles
 
 1ère semaines:
  - Constitution du groupes
