@@ -41,12 +41,14 @@ Roles attribué et planning des prochaines 15 semaines:
     - assemblage de chaque programme pour créer le produit finale
   - Codage:
     - armes (rapidité de tirs, dégats au monstres, changement d'armes)
+    - système de level up
     - mouvement du personnage et fonctions squelettes du jeu (comment le personnage bouge sur la map avec le clavier, comment il tire, etc)
 - Ivan:
   - design:
     - des armes
     - des personnages et monstres
     - de la map
+    - fond d'écran
     - et tout autres objets
   - codage:
     - vies (on perd des vies en contact des monstres et comment on les récupére
@@ -55,6 +57,7 @@ Roles attribué et planning des prochaines 15 semaines:
   - codage:
     - création de map (où trouver des objets et codage des obstacles)
     - zombies/monstres (comment il apparaissent, leur système de mouvement, leur dégats)
+    - système de level up
   - debugging et testing
     - chaque semaine il passera 10minutes à faire des tests et réparer des problèmes en fin de scéance
 
@@ -64,6 +67,7 @@ Roles attribué et planning des prochaines 15 semaines:
   - codage des enemies/monstres:
     - comment ils bougent et suivent le personnage
     - comment ils évitent les obstacles
+  - sons et music du jeu
 
 1ère semaines :
  - Constitution du groupes
@@ -88,6 +92,8 @@ Roles attribué et planning des prochaines 15 semaines:
  - fin du codage de la map
  - début codage des ennemis
  - codage des armes et comment les trouver
+6ème semaine :
+ - codage
 10 minute chaque semaine pour testé et réparer si nécessaire le programme
 Then one hour on week 15 just testing and debugging
 
