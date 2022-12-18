@@ -36,7 +36,7 @@ cahier des charges :
 Roles attribué et planning des prochaines 15 semaines:
 - Oliver:
   - coordination:
-    - création du programme de chacun (semaine 3)
+    - création du planning de chacun et en général(semaine 3)
     - création d'un groupe de communication
     - assemblage de chaque programme pour créer le produit finale
   - Codage:
@@ -65,22 +65,29 @@ Roles attribué et planning des prochaines 15 semaines:
     - comment ils bougent et suivent le personnage
     - comment ils évitent les obstacles
 
-1ère semaines:
+1ère semaines :
  - Constitution du groupes
  - Création du dépôt Github et envoi de l'adresse par Atrium
  - Création de sujets avec brèves descriptions dans le readme du dépôt Github
  *fait en groupe*
-2ème semaine:
+2ème semaine :
  - un choix définitif du projet et de son nom
  - un cahier des charges
  *fait en groupe*
 3ème semaine:
  - création de ce planning
- - découpage du projet, et distribution à chaque membre *fait par Oliver et MaxC*
- - début de design *fait par Ivan*
- - 
-
-10 mins every week testing and debugging
+ - découpage du projet, et distribution à chaque membre
+ - début de design des personnages et ennemis
+4ème semaine :
+ - fin de design des personnages et ennemis
+ - design des armes
+ - application des tutoriel pyxel afin de commencer à créer un squelette
+ - début du codage de la map
+ - design de la map
+5ème semaine :
+ - fin du codage de la map
+ - début codage des ennemis
+ - codage des armes et comment les trouver
+10 minute chaque semaine pour testé et réparer si nécessaire le programme
 Then one hour on week 15 just testing and debugging
 
-All coding element will take at least 4 hours per coding element
