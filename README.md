@@ -43,6 +43,7 @@ Roles attribué et planning des prochaines 15 semaines:
     - armes (rapidité de tirs, dégats au monstres, changement d'armes)
     - système de level up
     - mouvement du personnage et fonctions squelettes du jeu (comment le personnage bouge sur la map avec le clavier, comment il tire, etc)
+    - 
 - Ivan:
   - design:
     - des armes
@@ -52,18 +53,23 @@ Roles attribué et planning des prochaines 15 semaines:
   - codage:
     - vies (on perd des vies en contact des monstres et comment on les récupére)
     - les armes 
+    - du menu
+    - assemblage de chaque programme pour créer le produit finale
 
 - Max.C:
   - codage:
     - création de map (où trouver des objets et codage des obstacles)
     - zombies/monstres (comment il apparaissent, leur système de mouvement, leur dégats)
-    - système de level up
+    - du menu
+    - assemblage de chaque programme pour créer le produit finale
   - debugging et testing
-    - chaque semaine il passera 10minutes à faire des tests et réparer des problèmes en fin de scéance
+    - chaque semaine il passera 20 minutes à faire des tests et réparer des problèmes en fin de scéance
 
 
 - Max.F : 
   - map design
+  - codage du système de level up
+  - codage mouvement du personnage et de la caméra avec lui
   - codage des enemies/monstres:
     - comment ils bougent et suivent le personnage
     - comment ils évitent les obstacles
@@ -91,32 +97,43 @@ Roles attribué et planning des prochaines 15 semaines:
 5ème semaine :
  - fin du codage de la map
  - début codage des ennemis
+ - début codage du mouvement du personnage
  - début codage des armes et comment les trouver
 6ème semaine :
  - fin codage des armes et comment les trouver
  - début du codage du système de vies
  - codage des ennemis
 7ème semaine :
- - fin codage des ennemis
- - fin du codage du système de vies
+ - codage des ennemis
+ - codage du système de vies
  - début codage de level up
 8ème semaine :
-
+ - fin codage des ennemis
+ - début codage de level up
 9ème semaine :
-
+ - fin codage de level up
+ - début codage du mouvement du personnage
+ - début codage du menu
 10ème semaine :
-
+ - fin codage du mouvement du personnage
+ - fin codage du menu
+ - assemblage
+ - sons et musiques du jeu
 11ème semaine :
-
+ - assemblage
+ - début codage de toutes choses oublier
+ 
 12ème semaine :
-
+ - codage de toutes choses oublié dans le planning jusqu'ici
 13ème semaine :
+ - codage de toutes choses oublié dans le planning jusqu'ici
 
 14ème semaine :
- -la dèrnière heure sera consacrée au tests et réparage du programme
+ - fin codage de toutes choses oublié dans le planning jusqu'ici
+ - la dèrnière heure sera consacrée au tests et réparage du programme
 
 15ème semaine :
  -entièrement consacrer au tests et réparage du programme
-10 minute chaque semaine pour testé et réparer si nécessaire le programme
-Then one hour on week 15 just testing and debugging
+
+20 minute chaque semaine pour testé et réparer si nécessaire le programme
 
