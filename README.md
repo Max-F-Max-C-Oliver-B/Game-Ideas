@@ -48,10 +48,10 @@ Roles attribué et planning des prochaines 15 semaines:
     - des armes
     - des personnages et monstres
     - de la map
-    - fond d'écran
     - et tout autres objets
   - codage:
-    - vies (on perd des vies en contact des monstres et comment on les récupére
+    - vies (on perd des vies en contact des monstres et comment on les récupére)
+    - les armes 
 
 - Max.C:
   - codage:
@@ -91,9 +91,32 @@ Roles attribué et planning des prochaines 15 semaines:
 5ème semaine :
  - fin du codage de la map
  - début codage des ennemis
- - codage des armes et comment les trouver
+ - début codage des armes et comment les trouver
 6ème semaine :
- - codage
+ - fin codage des armes et comment les trouver
+ - début du codage du système de vies
+ - codage des ennemis
+7ème semaine :
+ - fin codage des ennemis
+ - fin du codage du système de vies
+ - début codage de level up
+8ème semaine :
+
+9ème semaine :
+
+10ème semaine :
+
+11ème semaine :
+
+12ème semaine :
+
+13ème semaine :
+
+14ème semaine :
+ -la dèrnière heure sera consacrée au tests et réparage du programme
+
+15ème semaine :
+ -entièrement consacrer au tests et réparage du programme
 10 minute chaque semaine pour testé et réparer si nécessaire le programme
 Then one hour on week 15 just testing and debugging
 
