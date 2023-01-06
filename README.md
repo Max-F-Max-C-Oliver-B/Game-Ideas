@@ -80,51 +80,63 @@ Roles attribué et planning des prochaines 15 semaines:
  - Création du dépôt Github et envoi de l'adresse par Atrium
  - Création de sujets avec brèves descriptions dans le readme du dépôt Github
  *fait en groupe*
+
 2ème semaine :
  - un choix définitif du projet et de son nom
  - un cahier des charges
  *fait en groupe*
+
 3ème semaine:
  - création de ce planning
  - découpage du projet, et distribution à chaque membre
  - début de design des personnages et ennemis
+
 4ème semaine :
  - fin de design des personnages et ennemis
  - design des armes
  - application des tutoriel pyxel afin de commencer à créer un squelette
  - début du codage de la map
  - design de la map
+
 5ème semaine :
  - fin du codage de la map
  - début codage des ennemis
  - début codage du mouvement du personnage
  - début codage des armes et comment les trouver
+
 6ème semaine :
  - fin codage des armes et comment les trouver
  - début du codage du système de vies
  - codage des ennemis
+
 7ème semaine :
  - codage des ennemis
  - codage du système de vies
  - début codage de level up
+
 8ème semaine :
  - fin codage des ennemis
  - début codage de level up
+
 9ème semaine :
  - fin codage de level up
  - début codage du mouvement du personnage
  - début codage du menu
+
 10ème semaine :
  - fin codage du mouvement du personnage
  - fin codage du menu
  - assemblage
  - sons et musiques du jeu
+
 11ème semaine :
  - assemblage
  - début codage de toutes choses oublier
  
+
 12ème semaine :
  - codage de toutes choses oublié dans le planning jusqu'ici
+
 13ème semaine :
  - codage de toutes choses oublié dans le planning jusqu'ici
 
