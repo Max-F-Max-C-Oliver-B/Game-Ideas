@@ -135,7 +135,7 @@ Roles attribué et planning des prochaines 15 semaines:
  - la dèrnière heure sera consacrée au tests et réparage du programme
 
 15ème semaine :
- -entièrement consacrer au tests et réparage du programme
+ - entièrement consacrer au tests et réparage du programme
 
 20 minute chaque semaine pour testé et réparer si nécessaire le programme
 
