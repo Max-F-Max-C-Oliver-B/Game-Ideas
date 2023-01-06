@@ -16,18 +16,16 @@ cahier des charges :
 
    - souris pour diriger le joueur, clavier pour bouger dans la map
    - 1 joueur
-   - 2D, d'en haut, scrolling
+   - 2D, d'en haut,
    - infini jusqu'à mort
-   - 3 vies maximum, vies trouvable sur la map, points en fonction des zombies
+   - 3 vies maximum, vies trouvable sur la map, points en fonction du temps
    - les niveaux de difficulté augmentent avec le temps
-   - des zombies qui nous suivent (attirés vers le joueur)
    - musique ou autre pourrait être trouver sur: https://pixabay.com/sound-effects/search/retro%20games/
-   - projectiles tirer avec la souris
    - Birds eye view
    - Retro Mobs
    - level ups : 
      - maximum trois vies mais on peut en trouver si jamais on en perd une
-     - si le niveau augmente ou on a un certain niveau de points, on change d'armes(font plus de dégats)
+     - si le niveau augmente ou on a un certain niveau de points
    
 
 90s retro style shooter game. Kill the Zombies, and DON'T DIE.
@@ -40,25 +38,21 @@ Roles attribué et planning des prochaines 15 semaines:
     - création d'un groupe de communication
     - assemblage de chaque programme pour créer le produit finale
   - Codage:
-    - armes (rapidité de tirs, dégats au monstres, changement d'armes)
     - système de level up
-    - mouvement du personnage et fonctions squelettes du jeu (comment le personnage bouge sur la map avec le clavier, comment il tire, etc)
-    - 
+    - mouvement du personnage et fonctions squelettes du jeu (comment le personnage bouge sur la map avec le clavier, etc)
 - Ivan:
   - design:
-    - des armes
     - des personnages et monstres
     - de la map
     - et tout autres objets
   - codage:
     - vies (on perd des vies en contact des monstres et comment on les récupére)
-    - les armes 
     - du menu
     - assemblage de chaque programme pour créer le produit finale
 
 - Max.C:
   - codage:
-    - création de map (où trouver des objets et codage des obstacles)
+    - création de map 
     - zombies/monstres (comment il apparaissent, leur système de mouvement, leur dégats)
     - du menu
     - assemblage de chaque programme pour créer le produit finale
@@ -69,7 +63,7 @@ Roles attribué et planning des prochaines 15 semaines:
 - Max.F : 
   - map design
   - codage du système de level up
-  - codage mouvement du personnage et de la caméra avec lui
+  - codage mouvement du personnage
   - codage des enemies/monstres:
     - comment ils bougent et suivent le personnage
     - comment ils évitent les obstacles
@@ -93,7 +87,6 @@ Roles attribué et planning des prochaines 15 semaines:
 
 4ème semaine :
  - fin de design des personnages et ennemis
- - design des armes
  - application des tutoriel pyxel afin de commencer à créer un squelette
  - début du codage de la map
  - design de la map
@@ -102,10 +95,8 @@ Roles attribué et planning des prochaines 15 semaines:
  - fin du codage de la map
  - début codage des ennemis
  - début codage du mouvement du personnage
- - début codage des armes et comment les trouver
 
 6ème semaine :
- - fin codage des armes et comment les trouver
  - début du codage du système de vies
  - codage des ennemis
 
@@ -133,7 +124,6 @@ Roles attribué et planning des prochaines 15 semaines:
  - assemblage
  - début codage de toutes choses oublier
  
-
 12ème semaine :
  - codage de toutes choses oublié dans le planning jusqu'ici
 
