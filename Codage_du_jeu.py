@@ -1,4 +1,4 @@
-import pyxel, random, time
+import pyxel, random, time, sys
 """Tu as pour mission de sauver la Terre d'une pluie de météorites en la guidant hors de danger en évitant chacune d'entre-elles"""
 pyxel.init(128, 128, title="Astroide reign")
 
@@ -8,7 +8,7 @@ Terre_x = 60
 Terre_y = 60
 
 #40=1seconde
-Ticks = 500
+Ticks = 1200
 Ticks2 = Ticks 
 timer = 60
 
@@ -18,7 +18,7 @@ météorites_liste_left = []
 
 explosions_liste = []  
 
-points = 0
+points = 50
 def Terre_deplacement(x, y):
     """déplacement avec les touches de directions"""
 
@@ -53,12 +53,12 @@ def météorites_deplacement(météorites_liste_up, météorites_liste_left):
         météorite[1] += 2
         if  météorite[1]>128:
             météorites_liste_up.remove(météorite)
-            points = points+1
+            points = points-1
     for météorite_left in météorites_liste_left:
         météorite_left[0] += 2
         if  météorite_left[0]>128:
             météorites_liste_left.remove(météorite_left)
-            points = points+1
+            points = points-1
 
 def Terre_suppression(Ticks, météorites_liste_up, météorites_liste_left):
     """disparition du Terre et d'un météorite si contact"""
@@ -124,8 +124,8 @@ def draw():
     if Ticks > 0:
 
         pyxel.text(5,5, 'Ticks: '+ str(Ticks), 7)
-        
-        pyxel.text(90,5, 'Time:' + str(Ticks2),7)
+        pyxel.text(90,5, 'Points'+ str(points), 7)
+        #pyxel.text(90,5, 'Time:' + str(Ticks2),7)
 
         pyxel.rect(Terre_x, Terre_y, 8, 8, 1)
 
@@ -135,11 +135,9 @@ def draw():
         for météorite in météorites_liste_left:
             pyxel.rect(météorite[0], météorite[1], 8, 8, 8)
         for explosion in explosions_liste:
-            pyxel.circb(explosion[0]+4, explosion[1]+4, 2*(explosion[2]//4), 8+explosion[2]%3)            
-
+            pyxel.circb(explosion[0]+4, explosion[1]+4, 2*(explosion[2]//4), 8+explosion[2]%3)      
     else:
-
         pyxel.text(50,64, 'GAME OVER', 7)
-        pyxel.text(50,94,'VOS POINTS: '+str(points),7)
+        pyxel.text(25,94,'VOS POINTS RESTANT: '+str(points),7)
 
 pyxel.run(update, draw)
