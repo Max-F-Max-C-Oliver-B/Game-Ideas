@@ -1,6 +1,8 @@
 import pyxel, random, time
 """Tu as pour mission de sauver la Terre d'une pluie de météorites en la guidant hors de danger en évitant chacune d'entre-elles"""
-pyxel.init(128, 128, title="Astroide reign")
+
+taille_fenetre=256
+pyxel.init(taille_fenetre, taille_fenetre, title="Astroide reign")
 
 points = 0
 
@@ -11,7 +13,7 @@ Terre_y = 60
 #30=1seconde
 Ticks = 100000
 Ticks2 = 100000 
-timer = 100
+timer = 40
 
 météorites_liste_up = []
 
@@ -21,19 +23,45 @@ explosions_liste = []
 
 def Terre_deplacement(x, y):
     """déplacement avec les touches de directions"""
-
-    if pyxel.btn(pyxel.KEY_RIGHT):
-        if (x < 120) :
-            x = x + 2
-    if pyxel.btn(pyxel.KEY_LEFT):
-        if (x > 0) :
-            x = x - 2
-    if pyxel.btn(pyxel.KEY_DOWN):
-        if (y < 120) :
-            y = y + 2
-    if pyxel.btn(pyxel.KEY_UP):
-        if (y > 0) :
-            y = y - 2
+    if timer > 20 :
+        if pyxel.btn(pyxel.KEY_RIGHT):
+            if (x < taille_fenetre-8) :
+                x = x + 2
+        if pyxel.btn(pyxel.KEY_LEFT):
+            if (x > 0) :
+                x = x - 2
+        if pyxel.btn(pyxel.KEY_DOWN):
+            if (y < taille_fenetre-8) :
+                y = y + 2
+        if pyxel.btn(pyxel.KEY_UP):
+            if (y > 0) :
+                y = y - 2
+    if timer > 10 :
+        if pyxel.btn(pyxel.KEY_RIGHT):
+            if (x < taille_fenetre-8) :
+                x = x + 1.5
+        if pyxel.btn(pyxel.KEY_LEFT):
+            if (x > 0) :
+                x = x - 1.5
+        if pyxel.btn(pyxel.KEY_DOWN):
+            if (y < taille_fenetre-8) :
+                y = y + 1.5
+        if pyxel.btn(pyxel.KEY_UP):
+            if (y > 0) :
+                y = y - 1.5
+    else :
+        if pyxel.btn(pyxel.KEY_RIGHT):
+            if (x < taille_fenetre-8) :
+                x = x + 1
+        if pyxel.btn(pyxel.KEY_LEFT):
+            if (x > 0) :
+                x = x - 1
+        if pyxel.btn(pyxel.KEY_DOWN):
+            if (y < taille_fenetre-8) :
+                y = y + 1
+        if pyxel.btn(pyxel.KEY_UP):
+            if (y > 0) :
+                y = y - 1
     return x, y
 
 
@@ -42,20 +70,31 @@ def météorites_creation(météorites_liste_up, météorites_liste_left):
 
     # un météorite par seconde
     if (pyxel.frame_count % 30 == 0):
-        météorites_liste_up.append([random.randint(0, 120), 0])
-        météorites_liste_left.append([0,random.randint(0, 120)])
+        météorites_liste_up.append([random.randint(0, taille_fenetre-8), 0])
+        météorites_liste_left.append([0,random.randint(0, taille_fenetre-8)])
 
 
 def météorites_deplacement(météorites_liste_up, météorites_liste_left):
     """déplacement des météorites vers le haut et suppression s'ils sortent du cadre"""
-    for météorite in météorites_liste_up:
-        météorite[1] += 2
-        if  météorite[1]>128:
-            météorites_liste_up.remove(météorite)
-    for météorite_left in météorites_liste_left:
-        météorite_left[0] += 2
-        if  météorite_left[0]>128:
-            météorites_liste_left.remove(météorite_left)
+    if timer > 20 :
+        for météorite in météorites_liste_up:
+            météorite[1] += 2
+            if  météorite[1]>taille_fenetre:
+                météorites_liste_up.remove(météorite)
+        for météorite_left in météorites_liste_left:
+            météorite_left[0] += 2
+            if  météorite_left[0]>taille_fenetre:
+                météorites_liste_left.remove(météorite_left)
+    else:
+        for météorite in météorites_liste_up:
+            météorite[1] += 4
+            if  météorite[1]>taille_fenetre:
+                météorites_liste_up.remove(météorite)
+        for météorite_left in météorites_liste_left:
+            météorite_left[0] += 4
+            if  météorite_left[0]>taille_fenetre:
+                météorites_liste_left.remove(météorite_left)
+        
 
 def Terre_suppression(Ticks, météorites_liste_up, météorites_liste_left):
     """disparition du Terre et d'un météorite si contact"""
@@ -127,7 +166,7 @@ def draw():
 
         pyxel.text(5,5, 'Points: '+ str(points), 7)
         
-        pyxel.text(90,5, 'Time:' + str(timer),7)
+        pyxel.text(taille_fenetre-30,5, 'Time:' + str(timer),7)
         
         pyxel.rect(Terre_x, Terre_y, 8, 8, 1)
 
@@ -140,7 +179,7 @@ def draw():
 
     else:
 
-        pyxel.text(48,55, 'GAME OVER', 7)
-        pyxel.text(42,64, 'Vos Points:' + str(points),7)
+        pyxel.text(48*2,55*2, 'GAME OVER', 7)
+        pyxel.text(42*2,64*2, 'Vos Points:' + str(points),7)
 
 pyxel.run(update, draw)
