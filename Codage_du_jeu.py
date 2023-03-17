@@ -3,17 +3,22 @@ import pyxel, random, time
 
 taille_fenetre=256
 pyxel.init(taille_fenetre, taille_fenetre, title="Astroide reign")
-
+pyxel.load("res (1).pyxres")
+points2 = 0
 points = 0
+i = 1
 
 #coin haut gauche
 Terre_x = 60
 Terre_y = 60
 
+terre_width=16
+terre_height=16
+
 #30=1seconde
 Ticks = 100000
 Ticks2 = 100000 
-timer = 40
+timer = 20
 
 météorites_liste_up = []
 
@@ -25,39 +30,39 @@ def Terre_deplacement(x, y):
     """déplacement avec les touches de directions"""
     if timer > 20 :
         if pyxel.btn(pyxel.KEY_RIGHT):
-            if (x < taille_fenetre-8) :
+            if (x+terre_width< taille_fenetre) :
                 x = x + 2
         if pyxel.btn(pyxel.KEY_LEFT):
             if (x > 0) :
                 x = x - 2
         if pyxel.btn(pyxel.KEY_DOWN):
-            if (y < taille_fenetre-8) :
+            if (y+terre_height< taille_fenetre) :
                 y = y + 2
         if pyxel.btn(pyxel.KEY_UP):
             if (y > 0) :
                 y = y - 2
     if timer > 10 :
         if pyxel.btn(pyxel.KEY_RIGHT):
-            if (x < taille_fenetre-8) :
+            if (x+terre_width< taille_fenetre) :
                 x = x + 1.5
         if pyxel.btn(pyxel.KEY_LEFT):
             if (x > 0) :
                 x = x - 1.5
         if pyxel.btn(pyxel.KEY_DOWN):
-            if (y < taille_fenetre-8) :
+            if (y+terre_height< taille_fenetre) :
                 y = y + 1.5
         if pyxel.btn(pyxel.KEY_UP):
             if (y > 0) :
                 y = y - 1.5
     else :
         if pyxel.btn(pyxel.KEY_RIGHT):
-            if (x < taille_fenetre-8) :
+            if (x+terre_width< taille_fenetre) :
                 x = x + 1
         if pyxel.btn(pyxel.KEY_LEFT):
             if (x > 0) :
                 x = x - 1
         if pyxel.btn(pyxel.KEY_DOWN):
-            if (y < taille_fenetre-8) :
+            if (y+terre_height< taille_fenetre) :
                 y = y + 1
         if pyxel.btn(pyxel.KEY_UP):
             if (y > 0) :
@@ -101,13 +106,13 @@ def Terre_suppression(Ticks, météorites_liste_up, météorites_liste_left):
     global points
 
     for météorite in météorites_liste_up:
-        if météorite[0] <= Terre_x+8 and météorite[1] <= Terre_y+8 and météorite[0]+8 >= Terre_x and météorite[1]+8 >= Terre_y:
+        if météorite[0] <= Terre_x+terre_width and météorite[1] <= Terre_y+terre_height and météorite[0]+8 >= Terre_x and météorite[1]+8 >= Terre_y:
             météorites_liste_up.remove(météorite)
             Ticks -= 1
             points += 1
             explosions_creation(Terre_x, Terre_y)
     for météorite in météorites_liste_left:
-        if météorite[0] <= Terre_x+8 and météorite[1] <= Terre_y+8 and météorite[0]+8 >= Terre_x and météorite[1]+8 >= Terre_y:
+        if météorite[0] <= Terre_x+terre_width and météorite[1] <= Terre_y+terre_height and météorite[0]+8 >= Terre_x and météorite[1]+8 >= Terre_y:
             météorites_liste_left.remove(météorite)
             points += 1
         Ticks -= 1
@@ -128,7 +133,7 @@ def explosions_animation():
             explosions_liste.remove(explosion)  
             
 def pointsystem():
-    global timer, points
+    global timer, points, points2
     if timer == 1:
         points2 = points
 
@@ -138,12 +143,18 @@ def clock():
     global timer,Ticks2
     if Ticks2%30 == 0 :
         timer -= 1
-    
+        
+def endpoints():
+    global timer, points , points2
+    if timer > 1 :
+        points2 = points
+    return points
+
 
 def update():
     """mise à jour des variables (30 fois par seconde)"""
     
-    global Terre_x, Terre_y, météorites_liste_up, Ticks, explosions_liste, timer, Ticks2, points
+    global Terre_x, Terre_y, météorites_liste_up, Ticks, explosions_liste, timer, Ticks2, points, i, points2
 
     Terre_x, Terre_y = Terre_deplacement(Terre_x, Terre_y)
 
@@ -152,7 +163,9 @@ def update():
 
     Ticks = Terre_suppression(Ticks, météorites_liste_up, météorites_liste_left)
 
-    explosions_animation()    
+    explosions_animation()
+
+    endpoints()
 
     clock()
     Ticks2-=1
@@ -160,7 +173,7 @@ def update():
 def draw():
     """création des objets (30 fois par seconde)"""
     
-    global Ticks2
+    global Ticks2 , i
     pyxel.cls(0)
     if timer > 0:
 
@@ -168,7 +181,8 @@ def draw():
         
         pyxel.text(taille_fenetre-30,5, 'Time:' + str(timer),7)
         
-        pyxel.rect(Terre_x, Terre_y, 8, 8, 1)
+        #pyxel.rect(Terre_x, Terre_y, 8, 8, 1)
+        pyxel.blt(Terre_x, Terre_y,0,48,112,terre_width,terre_height)
 
         for météorite in météorites_liste_up:
             pyxel.rect(météorite[0], météorite[1], 8, 8, 8)
@@ -178,8 +192,12 @@ def draw():
             pyxel.circb(explosion[0]+4, explosion[1]+4, 2*(explosion[2]//4), 8+explosion[2]%3)            
 
     else:
-
-        pyxel.text(48*2,55*2, 'GAME OVER', 7)
-        pyxel.text(42*2,64*2, 'Vos Points:' + str(points),7)
+        if i < 16:
+            if Ticks2%7 == 0 :
+                i = i + 1
+                if i == 15:
+                    i=1
+            pyxel.text(110,110, 'GAME OVER', i)
+        pyxel.text(105,120, 'Vos Points:' + str(points),7)
 
 pyxel.run(update, draw)
